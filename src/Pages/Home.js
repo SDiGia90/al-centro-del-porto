@@ -14,7 +14,7 @@ export default function Home(props) {
   return (
     <div className="container-fluid">
       <Navbar eng={props.eng} />
-      {props.eng === true ? <h1>Welcome</h1> : <h1>Benvenuto</h1>}
+      {props.eng === true ? <h1>Welcome</h1> : <h1>Benvenuti</h1>}
       <img
         className="img-home"
         src={home}
@@ -36,27 +36,74 @@ export default function Home(props) {
           pochissimi minuti dal mare.
         </p>
       )}
-<div className="car-div">
-      <Carousel autoPlay>
-        <div>
-          <img className="photo" alt="" src={photo1} />
-        </div>
-        <div>
-          <img className="photo" alt="" src={photo2} />
-        </div>
-        <div>
-          <img className="photo" alt="" src={photo3} />
-        </div>
-        <div>
-          <img className="photo" alt="" src={photo4} />
-        </div>
-        <div>
-          <img className="photo" alt="" src={photo5} />
-        </div>
-        <div>
-          <img className="photo" alt="" src={photo6} />
-        </div>
-      </Carousel>
+      <div className="car-div">
+        <Carousel autoPlay>
+          <div>
+            <img className="photo" alt="" src={photo1} />
+          </div>
+          <div>
+            <img className="photo" alt="" src={photo2} />
+          </div>
+          <div>
+            <img className="photo" alt="" src={photo3} />
+          </div>
+          <div>
+            <img className="photo" alt="" src={photo4} />
+          </div>
+          <div>
+            <img className="photo" alt="" src={photo5} />
+          </div>
+          <div>
+            <img className="photo" alt="" src={photo6} />
+          </div>
+        </Carousel>
       </div>
+      {props.eng === true ? (
+        <div className="description">
+          <p>
+            We offer you a fully equipped studio apartment to have a pleasant
+            and relaxing experience.
+            <br />
+            <br />At your disposal:
+            <br />- Private parking next to the entrance door
+            <br />- Tv
+            <br />- Wi-fi
+            <br />- Inverter air conditioner (summer - winter)
+            <br />- Fridge
+            <br />
+            <br /> You will find a welcome kit with a snack and all the
+            necessary tools for cooking. In the apartment will also be at your
+            disposal: blankets, sheets, pillows, towels and bath towels for each
+            guest. The room has a comfortable double bed, large wardrobe and the
+            possibility of a third bed on request, which you will find ready at
+            your arrival. The bathroom has a large shower, dispenser with shower
+            gel and shampoo.
+          </p>
+        </div>
+      ) : (
+        <div className="description">
+          <p>
+            Il nostro obiettivo è offrirvi un monolocale attrezzato al meglio
+            affinché il vostro soggiorno sia un'esperienza piacevole e
+            rilassante.
+            <br />
+            <br />A vostra disposizione:
+            <br />- Parcheggio privato adiacente alla porta di ingresso
+            <br />- Tv
+            <br />- Wi-fi
+            <br />- Condizionatore Inverter (estate - inverno)
+            <br />- Frigorifero
+            <br />
+            <br /> Al vostro arrivo troverete un kit di benvenuto con uno
+            spuntino e tutti gli utensili necessari per la preparazione dei
+            pasti. Nell'appartamento inoltre saranno a vostra disposizione:
+            coperte, lenzuola, cuscini, asciugamani e teli bagno per ogni
+            ospite. La camera dispone di comodo letto matrimoniale, ampio
+            armadio e possibilità di terzo letto su richiesta, che troverete già
+            pronti al vostro arrivo. Il bagno ha un'ampia doccia, dispenser con
+            bagno schiuma e shampoo.
+          </p>
+        </div>
+      )}
     </div>
   );}

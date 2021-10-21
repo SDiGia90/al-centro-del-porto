@@ -5,17 +5,21 @@ h1{
 }
 p{
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top:3rem;
+  margin-bottom: 2rem;
 }
 .car-div{
   margin: 0 auto;
-  width: 70%;
+  width: 40%;
 }
 .container-fluid {
 padding: 0;
 }
 
+.description{
+  margin: 0 25rem;
+}
 
 .img-home {
   width: 35%;
