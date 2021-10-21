@@ -24,7 +24,9 @@ padding: 0;
   opacity: 0.6;
   padding: 1rem 3rem;
 }
-
+.descr-par{
+  font-weight: bold;
+}
 .img-home {
   width: 35%;
   text-align: center;

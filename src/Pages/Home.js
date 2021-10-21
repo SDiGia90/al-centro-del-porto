@@ -60,11 +60,12 @@ export default function Home(props) {
       </div>
       {props.eng === true ? (
         <div className="description">
-          <p>
+          <p className="descr-par">
             We offer you a fully equipped studio apartment to have a pleasant
             and relaxing experience.
             <br />
-            <br />At your disposal:
+            <br />
+            At your disposal:
             <br />- Private parking next to the entrance door
             <br />- Tv
             <br />- Wi-fi
@@ -82,7 +83,7 @@ export default function Home(props) {
         </div>
       ) : (
         <div className="description">
-          <p>
+          <p className="descr-par">
             Il nostro obiettivo è offrirvi un monolocale attrezzato al meglio
             affinché il vostro soggiorno sia un'esperienza piacevole e
             rilassante.
