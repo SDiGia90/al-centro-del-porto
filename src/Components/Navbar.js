@@ -36,17 +36,17 @@ export default function Navbar(props) {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/">
-                Servizi
+                Dintorni
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/">
+                Prezzi
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/">
                 Prenota
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                Gallery
               </a>
             </li>
           </ul>

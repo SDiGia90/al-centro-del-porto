@@ -18,7 +18,11 @@ padding: 0;
 }
 
 .description{
-  margin: 0 25rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 0 20rem 5rem 20rem;
+  opacity: 0.6;
+  padding: 1rem 3rem;
 }
 
 .img-home {
