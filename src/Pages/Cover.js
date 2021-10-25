@@ -14,7 +14,7 @@ export default function Cover() {
   const [click, setClick] = useState(false);
   
   return (
-    <div className="container-fluid">
+    <div className="container-fluid logo-container">
       <Router>
         {click === false ? (
           <>
@@ -24,7 +24,7 @@ export default function Cover() {
               width="60%"
               alt="Al centro del Porto"
             />
-            <div className="container">
+            <div className="flag-container">
               <Link to="/Home" className="itflag">
                 <button className="btn">
                   <img
@@ -40,6 +40,7 @@ export default function Cover() {
                   />
                 </button>
               </Link>
+
               <Link to="/Home" className="enflag">
                 <button className="btn">
                   <img

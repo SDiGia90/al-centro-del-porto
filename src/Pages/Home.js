@@ -1,4 +1,6 @@
 import React from "react";
+
+
 import "./Home.css";
 import Navbar from "../Components/Navbar";
 import home from "../Pages/img-home.jpg";
@@ -12,7 +14,7 @@ import photo5 from "../img/ph-5.jpg";
 import photo6 from "../img/ph-6.jpg";
 export default function Home(props) {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid ">
       <Navbar eng={props.eng} />
       {props.eng === true ? <h1>Welcome</h1> : <h1>Benvenuti</h1>}
       <img
@@ -97,7 +99,7 @@ export default function Home(props) {
             <br />
             <br /> Al vostro arrivo troverete un kit di benvenuto con uno
             spuntino e tutti gli utensili necessari per la preparazione dei
-            pasti. Nell'appartamento inoltre saranno a vostra disposizione:
+            pasti. Nell' appartamento inoltre saranno a vostra disposizione:
             coperte, lenzuola, cuscini, asciugamani e teli bagno per ogni
             ospite. La camera dispone di comodo letto matrimoniale, ampio
             armadio e possibilità di terzo letto su richiesta, che troverete già
