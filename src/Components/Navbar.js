@@ -13,42 +13,63 @@ export default function Navbar(props) {
             height="60px"
             alt="Al centro del Porto"
           />
-          <span className="text-uppercase"> Al Centro del Porto</span>
+          <span className="text-uppercase "> Al Centro del Porto</span>
         </a>
 
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#tindogmenu"
+          data-bs-target="#navmenu"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="tindogmenu">
+        <div className="collapse navbar-collapse" id="menu">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" href="/">
                 Home
               </a>
             </li>
+            {props.eng === true ? (
+              <li className="nav-item">
+                <a className="nav-link" href="/">
+                  Nearby
+                </a>
+              </li>
+            ) : (
+              <li className="nav-item">
+                <a className="nav-link" href="/">
+                  Dintorni
+                </a>
+              </li>
+            )}
+            {props.eng === true ? (
+              <li className="nav-item">
+                <a className="nav-link" href="/">
+                  Rates
+                </a>
+              </li>
+            ) : (
+              <li className="nav-item">
+                <a className="nav-link" href="/">
+                  Prezzi
+                </a>
+              </li>
+            )}
+           {props.eng === true ? (
             <li className="nav-item">
               <a className="nav-link" href="/">
-                Dintorni
+                Book
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                Prezzi
-              </a>
-            </li>
-            <li className="nav-item">
+            </li>) : (<li className="nav-item">
               <a className="nav-link" href="/">
                 Prenota
               </a>
-            </li>
+            </li>)}
           </ul>
         </div>
       </nav>
