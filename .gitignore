@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# TailwindCSS CLI build output file
+/src/tailwind.css
+
+# Source Map Explorer (bundle size analyzer) output file
+sme_result.html
